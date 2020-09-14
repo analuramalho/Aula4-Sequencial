@@ -14,3 +14,45 @@ Quanto você quer sacar? 425
 2 notas de 10
 1 notas de 5
 */
+
+
+fun main(){
+    var valor: Int
+    do{
+        print("Digite o valor que será sacado : ")
+        valor = readLine()!!.toInt()
+
+        if(valor in 10..600){
+            break
+        }
+        print("Valor invalido! Saque é permitido apartir de R$10,00 ate R$600,00")
+    }while(true)
+
+    var nota100=valor/100
+    valor = valor%100
+
+    var nota50=valor/50
+    valor = valor%50
+
+    var nota10=valor/10
+    valor = valor%10
+
+    var nota5=valor/5
+    valor = valor%5
+    if(nota100>0){
+        println("$nota100 notas de R$100 ")
+    }
+    if(nota50>0){
+        println("$nota50 notas de R$50 ")
+    }
+    if(nota10>0){
+        println("$nota10 notas de R$10 ")
+    }
+    if(nota5>0){
+        println("$nota5 notas de R$5 ")
+    }
+    if(valor>0){
+        println("$valor notas de R$1")
+    }
+
+}

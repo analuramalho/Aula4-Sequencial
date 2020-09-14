@@ -9,3 +9,15 @@ Tabuada de 5:
 ...
 5 X 10 = 50
 */
+fun main(){
+    print("digite o numero que deseja obter a tabuada: ")
+    var num: Int = readLine()!!.toInt()
+
+
+    for(i:Int in 1..10){
+        var mult:Int = num*i
+        println("$num x $i  = $mult")
+    }
+
+
+}

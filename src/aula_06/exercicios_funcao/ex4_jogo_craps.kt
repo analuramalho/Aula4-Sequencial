@@ -1,5 +1,7 @@
 package aula_06.exercicios_funcao
 
+import kotlin.random.Random
+
 /*4. Jogo de Craps. Faça um programa de implemente um jogo de Craps. O jogador
 lança um par de dados, obtendo um valor entre 2 e 12. Se, na primeira jogada, você
 tirar 7 ou 11, você um "natural" e ganhou. Se você tirar 2, 3 ou 12 na primeira
@@ -17,9 +19,55 @@ Você tirou 7! Você perdeu =(
 Dica: Para obter valores aleatórios use
 Random.nextInt(DE, ATE)*/
 
-fun jogo(){
 
+fun jogarDados() = Random.nextInt(2, 12)
+
+
+fun segundaRodada(dado: Int) {
+    do {
+        print("Rolar dados?(s/n)")
+        var resposta = readLine()!!.toUpperCase()
+        if (resposta == "N") break
+
+        var dadoSegundaRodada = jogarDados()
+
+        when (dadoSegundaRodada) {
+            dado -> {
+                println("Voce tirou $dadoSegundaRodada . Voce Ganhou!!!")
+                break
+            }
+            7 -> {
+                println("Voce tirou $dadoSegundaRodada. Craps! Voce Perdeu :( ")
+                break
+            }
+            else -> println("Voce tirou $dadoSegundaRodada. Jogue novamente ")
+        }
+    } while (true)
 }
-fun main(){
 
+fun main() {
+
+    do {
+        print("Rolar dados?(s/n)")
+        var resposta = readLine()!!.toUpperCase()
+        if (resposta == "N") break
+
+        var dados = jogarDados()
+
+        when (dados) {
+            7, 11 -> {
+                println("Voce tirou $dados. Voce Ganhou !!!")
+                break
+            }
+            2, 3, 12 -> {
+                println("Voce tirou $dados. Craps! Voce Perdeu :( ")
+                break
+            }
+            else -> {
+                println("Voce tirou $dados. Jogue novamente ")
+                segundaRodada(dados)
+                break
+            }
+        }
+    } while (true)
 }
