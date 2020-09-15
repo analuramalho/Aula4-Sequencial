@@ -31,6 +31,4 @@ fun main(){
     println("Alegria:  ${jogador2.alegria}")
     println("Energia: ${jogador2.energia}\n")
 
-
-
 }
