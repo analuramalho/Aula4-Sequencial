@@ -4,12 +4,12 @@ class Conta(val numConta:Int, titular: Cliente) {
     var saldo: Double = 0.00
 
 
-    fun deposito(qntDinheiro:Double){
+    fun depositar(qntDinheiro:Double){
         saldo += qntDinheiro
         return println("Deposito Realizado com sucesso! Saldo atual: R$ " + "%.2f".format(saldo))
     }
 
-    fun saque(qntDinheiro: Double){
+    fun sacar(qntDinheiro: Double){
 
         if(qntDinheiro>saldo){
             return println("Saldo insuficiente")

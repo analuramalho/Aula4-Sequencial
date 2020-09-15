@@ -14,11 +14,11 @@ fun main(){
     println("Titular: ${cliente1.nomeCompleto} \n Conta: ${conta1.numConta} \n Saldo:${conta1.saldo} ")
     println("Titular: ${cliente2.nomeCompleto} \n Conta: ${conta2.numConta}\n Saldo:${conta2.saldo} ")
 
-    conta1.deposito(50.00)
-    conta1.saque(10.00)
+    conta1.depositar(50.00)
+    conta1.sacar(10.00)
 
-    conta2.deposito(100.00)
-    conta2.saque(50.00)
+    conta2.depositar(100.00)
+    conta2.sacar(50.00)
 
 
 
