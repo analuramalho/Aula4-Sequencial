@@ -1,0 +1,5 @@
+Em todos os exercicios na primeira verificação deu false e na segunda true
+pois sem sobrescrever o equals ele compara os objetos e não o conteudo do objeto
+e como são 2 objetos do mesmo tipo porem distintos a comparação retorna false
+Depois de sobrescrever o metodo equals dentro da classe ele compara exatamente o conteudo da variavel
+que desejamos e nos casos de exemplo dos exercicios retorna True
