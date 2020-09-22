@@ -1,4 +1,4 @@
-package aula_11.exercicios.exercicio_02
+package aula_11.exercicios_equals.exercicio_02
 
 fun main(){
     val coca1=Coca(2,5.00)

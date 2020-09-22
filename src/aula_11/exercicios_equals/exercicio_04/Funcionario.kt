@@ -1,4 +1,4 @@
-package aula_11.exercicios.exercicio_04
+package aula_11.exercicios_equals.exercicio_04
 
 class Funcionario(val nome:String, val numeroDeRegistro:Int) {
    override fun equals(other: Any?): Boolean {

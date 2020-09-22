@@ -1,4 +1,4 @@
-package aula_11.exemplo_aula
+package aula_11.exemplo_aula.equals
 
 fun main() {
     val time1 = Time("Fidelização ao cliente", 6)

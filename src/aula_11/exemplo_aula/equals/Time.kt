@@ -1,4 +1,4 @@
-package aula_11.exemplo_aula
+package aula_11.exemplo_aula.equals
 
 class Time(val nome:String,val quantidade:Int){
 

@@ -1,4 +1,4 @@
-package aula_11.exercicios.exercicio_01
+package aula_11.exercicios_equals.exercicio_01
 
 fun main(){
     val pessoa1=Pessoa("Maria",123)

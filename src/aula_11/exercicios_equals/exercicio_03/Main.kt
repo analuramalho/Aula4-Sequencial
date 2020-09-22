@@ -1,4 +1,4 @@
-package aula_11.exercicios.exercicio_03
+package aula_11.exercicios_equals.exercicio_03
 
 fun main(){
     var Alunos=ArrayList<Aluno>()
