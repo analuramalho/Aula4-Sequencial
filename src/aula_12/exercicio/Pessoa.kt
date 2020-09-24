@@ -1,4 +1,6 @@
 package aula_12.exercicio
 
-class Pessoa {
+data class Pessoa(val nome: String, val estado: Estado) {
 }
+
+
